@@ -232,12 +232,17 @@ body {
 
 .main .info-text.register .animation {
     transform: translateX(-130%);
+    opacity: 0;
+    filter: blur(10px);
     transition: 0.9s ease;
+    transition-delay: calc(.1s * var(--j));
 }
 
 .main.active .info-text.register .animation {
     transform: translateX(0);
-    transition-delay: 1.1s;
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
 }
 
 .info-text h2 {
